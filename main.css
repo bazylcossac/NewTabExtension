@@ -1,0 +1,423 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: whitesmoke;
+        font-family: 'Lato', sans-serif;
+        overflow: hidden;
+    }
+    
+    main {
+        height: 60%;
+    }
+    
+    #container {
+        margin-top: -15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    div#top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    div#top p {
+        margin: 20px;
+    }
+    
+    div#menu {
+        display: flex;
+        width: 400px;
+        justify-content: space-evenly;
+    }
+    
+    #options {
+        transition: .3s;
+    }
+    
+    #options:hover {
+        transition: .3s;
+        transform: rotate(90deg);
+    }
+    
+    div#menu i {
+        font-size: 15px;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+    
+    div#time {
+        height: 73vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default
+    }
+    
+    div#time p {
+        font-size: 5rem;
+        text-shadow: 0px 0px 20px #242424;
+    }
+    
+    div#quote p {
+        font-size: 1rem;
+        text-shadow: 0px 0px 20px #242424;
+    }
+    
+    div#quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px auto;
+        width: 80%;
+        padding: 10px;
+    }
+    
+    div#quote p {
+        text-shadow: 0px 0px 20px #242424;
+    }
+    
+    #ddot {
+        padding: 3px;
+        margin: auto;
+    }
+    
+    .temperature {
+        font-size: 20px;
+    }
+    
+    div.tempContainer {
+        display: flex;
+        align-items: center;
+    }
+    
+    div.tempContainer img {
+        width: 50px;
+    }
+    
+    .cityTempName {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    div#aboutme,
+    div#ipFind,
+    div#QRgen {
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    div#findIp {
+        cursor: pointer;
+    }
+    
+    div#aboutme {
+        cursor: pointer;
+    }
+    
+    div#abotmeBox {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 700px;
+        height: 500px;
+        animation: myAnim 0.4s ease 0s 1 normal forwards;
+    }
+    
+    div.abmContainer {
+        background-color: #171720;
+        width: 700px;
+        height: 500px;
+        border-radius: 20px;
+        border: 1px solid darkgrey;
+    }
+    
+    div.BtnBox {
+        text-align: right;
+    }
+    
+    #Xbtn {
+        margin: 20px;
+        padding: 5px 10px;
+        border: none;
+        background-color: #060606;
+        color: #646178;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #Xbtn:hover {
+        color: #b94c39;
+    }
+    
+    #dots {
+        display: flex;
+        width: 70px;
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+    
+    #red {
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    
+    #yellow {
+        background-color: yellow;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    
+    #green {
+        background-color: lightgreen;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    
+    div.abmDesc {
+        justify-content: space-evenly;
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    
+    div.abmDesc img {
+        width: 210px;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    div.abmText {
+        width: 60%;
+        margin-right: 10px;
+    }
+    
+    .abmTextPar {
+        font-size: 15px;
+    }
+    
+    div.socialLinks {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        align-items: center;
+        margin-top: 60px;
+    }
+    
+    div.socialLinks>i {
+        cursor: default;
+    }
+    
+    div.socialLinks>a {
+        color: white;
+        font-size: 3rem;
+    }
+    
+    div.ipfContainer {
+        background-color: #171720;
+        width: 700px;
+        height: 500px;
+        border-radius: 20px;
+        border: 1px solid darkgrey;
+    }
+    
+    div.ipfText {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.ipInput {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    div.ipInput button {
+        margin-left: -5px;
+    }
+    
+    div.rendIpDesc {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 50px auto;
+    }
+    
+    .countryName {
+        font-size: 1.4rem;
+        color: rgb(44, 199, 44);
+    }
+    
+    .cityName {
+        font-size: 1.2rem;
+        color: rgb(78, 159, 212)
+    }
+    
+    .cords {
+        font-size: 1.3rem;
+        color: rgb(219, 219, 14)
+    }
+    
+    div.errBox {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #checkInput,
+    #checkQrInput,
+    #optionsInput {
+        padding: 10px;
+        background-color: #25242e;
+        color: white;
+        text-align: center;
+        border: none;
+    }
+    
+    #checkInput:focus,
+    #checkQrInput:focus {
+        outline: none;
+    }
+    
+    #chceckBtn,
+    #generatekBtn {
+        background-color: #25242e;
+        color: white;
+        border: 1px solid #413f52;
+        cursor: pointer;
+    }
+    
+    #chceckBtn:hover {
+        background-color: white;
+        color: #25242e;
+    }
+    
+    div.generatedData {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .username,
+    .userEmail,
+    #userPass,
+    .userFullName,
+    .userAddress {
+        font-size: 1.2rem;
+        color: rgb(26, 122, 201)
+    }
+    
+    .userEmail {
+        color: #b42a2a
+    }
+    
+    #userPass {
+        color: rgb(221, 144, 44)
+    }
+    
+    .userFullName {
+        color: blueviolet
+    }
+    
+    .userAddress {
+        color: rgb(109, 184, 35)
+    }
+    
+    .buttonBox {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    #dataBtn {
+        background-color: #25242e;
+        color: white;
+        border: 1px solid #413f52;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    #dataBtn:hover {
+        background-color: white;
+        color: #25242e;
+    }
+    
+    div.optionsInputContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    div.optionsInputContainer p {
+        font-size: 1rem;
+    }
+    
+    #optionsInput {
+        width: 100px;
+        margin: auto;
+    }
+    
+    #optionsInput:focus {
+        outline: none;
+    }
+    
+    div.SaveButtonBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    #saveBtn {
+        background-color: #25242e;
+        color: white;
+        border: 1px solid #413f52;
+        cursor: pointer;
+        padding: 10px;
+        width: 80px;
+        margin: auto;
+    }
+    
+    #saveBtn:hover {
+        background-color: white;
+        color: #25242e;
+    }
+    
+    .thanks {
+        color: rgb(48, 48, 48)
+    }
+    
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }

@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "COOL BROWSER",
+    "author": "Michał Strojny",
+    "action": {
+        "default_icon": "images/icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+
+}
